@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import { useForm } from "react-hook-form";
-import styled from "styled-components";
 import { AuthLayout } from "../components/auth/AuthLayout";
 import { Bottom } from "../components/auth/Bottom";
 import { Button } from "../components/auth/Button";
 import { Form } from "../components/auth/Form";
 import { Input } from "../components/auth/Input";
 import { Title } from "../components/auth/Title";
+import { PageTitle } from "../components/PageTitle";
 import { routes } from "../routes";
 
 export const SignUp = () => {
@@ -31,6 +31,7 @@ export const SignUp = () => {
 
   return (
     <AuthLayout>
+      <PageTitle title="회원가입" />
       <Title>회원가입</Title>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Input
